@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Josh Yee's Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/"><img src="img/joshyee-logo.png" alt="josh yee logo"></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>The Image Machine</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A PERN App</p>
+            <img src="img/portfolio-08.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This is the Image Machine - an online image hosting application. You can search your computer or drag and drop image files for you to host a public link to.
+            </p>
+            <p>The app uses the PERN Stack - Postgres, Express, React, and Node. The images were hosted on AWS S3 and the database was hosted on AWS RDS. Deployed using Heroku.</p>
+            <p>The functionality may be limited currently because it is on a free tier for AWS.</p>
+            <!-- <img src="img/portfolio-06.jpg" alt=""> -->
+            <p><strong>Live Demo:</strong> <a target="_blank" href="https://immense-badlands-20339.herokuapp.com/">The Image Machine</a></p>
+            <p><strong>Code Repo:</strong> <a target="_blank" href="https://github.com/thejoshyee/image-uploader">Github</a></p>
+
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:joshyee@gmail.com" class="footer__link">joshyee@gmail.com</a>
+            <ul class="social-list">
+                <!-- <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li> -->
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/thejoshyee/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/joshyee">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/thejoshyee">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
