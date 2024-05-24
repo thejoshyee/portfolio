@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -35,14 +33,6 @@
     }
 }
 
-/* General styles */
-
-/* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
-
-
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -59,6 +49,7 @@ section {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 strong { font-weight: var(--fw-bold) }
@@ -67,8 +58,6 @@ strong { font-weight: var(--fw-bold) }
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
-
-/* Buttons */
 
 .btn {
     display: inline-block;
@@ -88,8 +77,6 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
-/* Typography */
-
 h1,
 h2,
 h3 {
@@ -100,7 +87,6 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
-
 
 .section__title {
     margin-bottom: .25em;
@@ -132,8 +118,6 @@ h3 { font-size: var(--fs-h3) }
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
-
-/* header */
 
 header {
     display: flex;
@@ -212,11 +196,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -232,7 +211,6 @@ header {
     transition: transform 250ms ease-in-out;
 }
 
-
 .hamburger::before,
 .hamburger::after {
     content: '';
@@ -243,9 +221,6 @@ header {
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
-
-
-/*  Intro section  */
 
 .intro {
     position: relative;
@@ -289,15 +264,10 @@ header {
     }
 }
 
-
-
-/*  My services section  */
-
 .my-services {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
 }
@@ -320,7 +290,6 @@ header {
 .services {
     margin-bottom: 4em;
     display: flex;
-
 }
 
 .service {
@@ -340,7 +309,6 @@ header {
         margin-left: 2em;
     }
 }
-
 
 .about-me {
     max-width: 1000px;
@@ -383,8 +351,6 @@ header {
     }
 }
 
-/* My Work */
-
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -399,9 +365,18 @@ header {
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 75%;
 }
 
 .portfolio__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -418,16 +393,12 @@ header {
     opacity: .5;
 }
 
-
-/* footer */
-
 .footer {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
 }
 
 .footer a { 
@@ -463,9 +434,6 @@ header {
 .social-list__link {
     padding: .5em;
 }
-
-
-/* Individual portfolio item styles */
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
